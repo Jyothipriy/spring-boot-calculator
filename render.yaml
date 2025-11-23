@@ -2,7 +2,7 @@ services:
   - type: web
     name: spring-boot-calculator
     env: java
-    buildCommand: "./mvnw clean package"
+    buildCommand: "./mvnw clean install -DskipTests"
     startCommand: "java -jar target/calculator-0.0.1-SNAPSHOT.jar"
     plan: free
 
